@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WanderPulse | International Tour Packages & Travel Guides</title>
+
+    <meta name="description"
+        content="Explore international tour packages, destination guides, travel tips and holiday planning ideas with WanderPulse. Discover your next adventure.">
+
+    <meta name="keywords"
+        content="international tour packages, holiday packages, Thailand tour packages, Malaysia tour packages, Mauritius tour packages, Bali tour packages, Turkey tour packages, travel guides">
+
+    <meta name="author" content="WanderPulse">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #172033;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #152238;
+        }
+
+        .logo span {
+            color: #f47c20;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #172033;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f47c20;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            background:
+                linear-gradient(
+                    rgba(15, 30, 50, 0.75),
+                    rgba(15, 30, 50, 0.75)
+                ),
+                url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            min-height: 570px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: #ffffff;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 22px;
+        }
+
+        .hero-content h1 span {
+            color: #f47c20;
+        }
+
+        .hero-content p {
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+            color: #f4f4f4;
+        }
+
+        .hero-buttons {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #f47c20;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #d9650c;
+        }
+
+        .btn-light {
+            background: #ffffff;
+            color: #172033;
+        }
+
+        .btn-light:hover {
+            background: #eeeeee;
+        }
+
+        /* ================= GENERAL ================= */
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #152238;
+        }
+
+        .section-heading p {
+            color: #667085;
+            font-size: 16px;
+        }
+
+        /* ================= INTRO ================= */
+
+        .intro {
+            background: #f8fafc;
+        }
+
+        .intro-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .intro-content h2 {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .intro-content p {
+            color: #5e6675;
+            font-size: 17px;
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services-section {
+            background: #ffffff;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .package-card {
+            background: #ffffff;
+            border: 1px solid #e7eaf0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+        }
+
+        .package-image {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .package-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .package-card:hover .package-image img {
+            transform: scale(1.05);
+        }
+
+        .package-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .package-content h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+            color: #172033;
+        }
+
+        .package-content p {
+            color: #697386;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .package-btn {
+            margin-top: auto;
+            display: inline-block;
+            background: #f47c20;
+            color: #ffffff;
+            padding: 11px 18px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .package-btn:hover {
+            background: #d9650c;
+        }
+
+        /* ================= TRAVEL GUIDES ================= */
+
+        .guides-section {
+            background: #f8fafc;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .guide-card {
+            background: #ffffff;
+            padding: 30px 25px;
+            border-radius: 9px;
+            border: 1px solid #e7eaf0;
+            transition: 0.3s;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        .guide-icon {
+            width: 50px;
+            height: 50px;
+            background: #fff1e6;
+            color: #f47c20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .guide-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .guide-card p {
+            color: #687386;
+            font-size: 15px;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about-section {
+            background: #ffffff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            margin-bottom: 18px;
+        }
+
+        .about-content p {
+            color: #626d7d;
+            margin-bottom: 15px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .about-list li {
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: #f47c20;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* ================= WHY WANDERPULSE ================= */
+
+        .why-section {
+            background: #f8fafc;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            background: #ffffff;
+            padding: 35px 25px;
+            border-radius: 9px;
+            text-align: center;
+            border: 1px solid #e8ebef;
+        }
+
+        .why-card .number {
+            width: 55px;
+            height: 55px;
+            background: #f47c20;
+            color: #ffffff;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .why-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: #697386;
+            font-size: 15px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-section {
+            background: #ffffff;
+        }
+
+        .contact-box {
+            max-width: 900px;
+            margin: auto;
+            background: #152238;
+            color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: #d8dee8;
+            margin-bottom: 25px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            font-size: 16px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #f47c20;
+            margin-bottom: 4px;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    rgba(244, 124, 32, 0.93),
+                    rgba(244, 124, 32, 0.93)
+                ),
+                url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            padding: 75px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #101927;
+            color: #ffffff;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 55px 25px 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo span {
+            color: #f47c20;
+        }
+
+        .footer-about p {
+            color: #adb7c6;
+            max-width: 500px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 18px;
+            font-size: 18px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #adb7c6;
+            margin-bottom: 9px;
+            transition: 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: #f47c20;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #293344;
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            color: #8e98a8;
+            font-size: 14px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .hero-content h1 {
+                font-size: 42px;
+            }
+
+            .package-grid,
+            .guide-grid,
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            .hero-content h1 {
+                font-size: 34px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 60px 18px;
+            }
+
+            .section-heading h2,
+            .about-content h2 {
+                font-size: 29px;
+            }
+
+            .package-grid,
+            .guide-grid,
+            .why-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 300px;
+            }
+
+            .contact-box {
+                padding: 35px 20px;
+            }
+
+            .contact-box h2 {
+                font-size: 28px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            Wander<span>Pulse</span>
+        </a>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="blogs.html">Blogs</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Explore the World With
+            <span>WanderPulse</span>
+        </h1>
+
+        <p>
+            Discover international tour packages, inspiring destinations,
+            useful travel guides and holiday planning ideas for your next
+            unforgettable journey.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="btn btn-primary">
+                Explore Tour Packages
+            </a>
+
+            <a href="blogs.html" class="btn btn-light">
+                Read Travel Guides
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <div class="section">
+
+        <div class="intro-content">
+
+            <h2>
+                Plan Your Perfect International Holiday
+            </h2>
+
+            <p>
+                WanderPulse helps travellers discover international holiday
+                destinations, tour packages and practical travel information.
+                From relaxing beach escapes to exciting cultural journeys,
+                explore travel ideas designed to make holiday planning easier.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES / TOUR PACKAGES ================= -->
+
+<section class="services-section" id="services">
+
+    <div class="section">
+
+        <div class="section-heading">
+
+            <h2>
+                International Tour Packages
+            </h2>
+
+            <p>
+                Explore popular international holiday packages and discover
+                destinations that are perfect for your next trip.
+            </p>
+
+        </div>
+
+
+        <div class="package-grid">
+
+
+            <!-- THAILAND -->
+
+            <div class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=900&q=80"
+                        alt="Thailand Tour Packages">
+
+                </div>
+
+                <div class="package-content">
+
+                    <h3>
+                        Thailand Tour Packages
+                    </h3>
+
+                    <p>
+                        Discover Bangkok, Pattaya, Phuket, Krabi and other
+                        popular destinations with flexible Thailand holiday
+                        packages.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/thailand-tour-packages/"
+                        target="_blank"
+                        rel="noopener"
+                        class="package-btn">
+                        View Thailand Packages
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MALAYSIA -->
+
+            <div class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+                        alt="Malaysia Tour Packages">
+
+                </div>
+
+                <div class="package-content">
+
+                    <h3>
+                        Malaysia Tour Packages
+                    </h3>
+
+                    <p>
+                        Explore Kuala Lumpur, Langkawi, Penang and other
+                        Malaysian destinations with exciting holiday options.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/malaysia-tour-packages/"
+                        target="_blank"
+                        rel="noopener"
+                        class="package-btn">
+                        View Malaysia Packages
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAURITIUS -->
+
+            <div class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1589979481223-deb893043163?auto=format&fit=crop&w=900&q=80"
+                        alt="Mauritius Tour Packages">
+
+                </div>
+
+                <div class="package-content">
+
+                    <h3>
+                        Mauritius Tour Packages
+                    </h3>
+
+                    <p>
+                        Enjoy beautiful beaches, island experiences and
+                        memorable tropical holidays with Mauritius tour
+                        packages.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/mauritius-tour-packages/"
+                        target="_blank"
+                        rel="noopener"
+                        class="package-btn">
+                        View Mauritius Packages
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- BALI -->
+
+            <div class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                        alt="Bali Tour Packages">
+
+                </div>
+
+                <div class="package-content">
+
+                    <h3>
+                        Bali Tour Packages
+                    </h3>
+
+                    <p>
+                        Experience Bali's beaches, temples, culture and
+                        unforgettable island attractions with curated holiday
+                        packages.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/bali-tour-packages/"
+                        target="_blank"
+                        rel="noopener"
+                        class="package-btn">
+                        View Bali Packages
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TURKEY -->
+
+            <div class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=80"
+                        alt="Turkey Tour Packages">
+
+                </div>
+
+                <div class="package-content">
+
+                    <h3>
+                        Turkey Tour Packages
+                    </h3>
+
+                    <p>
+                        Discover Istanbul, Cappadocia, historic attractions,
+                        unique landscapes and unforgettable Turkish experiences.
+                    </p>
+
+                    <a
+                        href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/turkey-tour-packages/"
+                        target="_blank"
+                        rel="noopener"
+                        class="package-btn">
+                        View Turkey Packages
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRAVEL GUIDES SERVICE CARD -->
+
+            <div class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=900&q=80"
+                        alt="International Travel Guides">
+
+                </div>
+
+                <div class="package-content">
+
+                    <h3>
+                        International Travel Guides
+                    </h3>
+
+                    <p>
+                        Find useful destination information, travel tips,
+                        itinerary ideas, visa information and holiday planning
+                        resources.
+                    </p>
+
+                    <a
+                        href="blogs.html"
+                        class="package-btn">
+                        Explore Travel Guides
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRAVEL GUIDES ================= -->
+
+<section class="guides-section">
+
+    <div class="section">
+
+        <div class="section-heading">
+
+            <h2>
+                Travel Guides & Resources
+            </h2>
+
+            <p>
+                Helpful travel content to make your international holiday
+                planning easier.
+            </p>
+
+        </div>
+
+
+        <div class="guide-grid">
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">🌍</div>
+
+                <h3>
+                    Destination Guides
+                </h3>
+
+                <p>
+                    Discover popular destinations, attractions and experiences
+                    around the world.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">🗺️</div>
+
+                <h3>
+                    Travel Itineraries
+                </h3>
+
+                <p>
+                    Get practical itinerary ideas for short trips and longer
+                    international holidays.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">✈️</div>
+
+                <h3>
+                    Travel Tips
+                </h3>
+
+                <p>
+                    Learn useful tips for flights, hotels, sightseeing,
+                    transportation and holiday planning.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">📄</div>
+
+                <h3>
+                    Visa Information
+                </h3>
+
+                <p>
+                    Understand basic visa requirements and travel documentation
+                    before planning your international trip.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">☀️</div>
+
+                <h3>
+                    Best Time to Travel
+                </h3>
+
+                <p>
+                    Explore seasonal travel information and discover suitable
+                    times to visit different destinations.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">💡</div>
+
+                <h3>
+                    Holiday Ideas
+                </h3>
+
+                <p>
+                    Get inspiration for family holidays, romantic escapes,
+                    group trips and international adventures.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="section">
+
+        <div class="about-grid">
+
+
+            <div class="about-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"
+                    alt="WanderPulse Travel">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h2>
+                    About WanderPulse
+                </h2>
+
+                <p>
+                    WanderPulse is a travel-focused platform created to help
+                    travellers discover international tour packages,
+                    destinations and practical travel information.
+                </p>
+
+                <p>
+                    Our goal is to make travel research simpler by bringing
+                    together holiday inspiration, destination guides, itinerary
+                    ideas and useful travel resources in one place.
+                </p>
+
+                <ul class="about-list">
+
+                    <li>
+                        International Travel Inspiration
+                    </li>
+
+                    <li>
+                        Tour Package Information
+                    </li>
+
+                    <li>
+                        Destination & Travel Guides
+                    </li>
+
+                    <li>
+                        Practical Holiday Planning Resources
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY WANDERPULSE ================= -->
+
+<section class="why-section">
+
+    <div class="section">
+
+        <div class="section-heading">
+
+            <h2>
+                Why Explore WanderPulse?
+            </h2>
+
+            <p>
+                Everything you need to discover your next international
+                adventure.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+            <div class="why-card">
+
+                <div class="number">
+                    01
+                </div>
+
+                <h3>
+                    International Focus
+                </h3>
+
+                <p>
+                    Explore travel ideas and holiday packages covering
+                    destinations around the world.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h3>
+                    Useful Travel Content
+                </h3>
+
+                <p>
+                    Find practical travel guides, destination information,
+                    itinerary ideas and planning tips.
+                </p>
+
+            </div>
+
+
+            <div class="why-card">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h3>
+                    Easy Travel Research
+                </h3>
+
+                <p>
+                    Discover destinations and tour package options in a simple
+                    and easy-to-navigate travel platform.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="section">
+
+        <div class="contact-box">
+
+            <h2>
+                Start Planning Your Next Trip
+            </h2>
+
+            <p>
+                Have a travel question or looking for an international holiday
+                package? Get in touch and start planning your next adventure.
+            </p>
+
+
+            <div class="contact-details">
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Phone
+                    </strong>
+
+                    +91 73000 07075
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Website
+                    </strong>
+
+                    Travel Saga Holidays
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Travel Focus
+                    </strong>
+
+                    International Holidays
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="tel:+917300007075"
+                class="btn btn-primary">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Explore the World?
+    </h2>
+
+    <p>
+        Discover international destinations, explore tour packages and find
+        useful travel guides for your next holiday.
+    </p>
+
+    <a href="#services" class="btn btn-light">
+        Explore Packages
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-grid">
+
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+                    Wander<span>Pulse</span>
+                </div>
+
+                <p>
+                    WanderPulse is an international travel platform featuring
+                    tour packages, destination inspiration, travel guides and
+                    useful holiday planning resources.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <a href="blogs.html">
+                    Blogs
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Popular Packages
+                </h3>
+
+                <a
+                    href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/thailand-tour-packages/"
+                    target="_blank"
+                    rel="noopener">
+                    Thailand
+                </a>
+
+                <a
+                    href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/malaysia-tour-packages/"
+                    target="_blank"
+                    rel="noopener">
+                    Malaysia
+                </a>
+
+                <a
+                    href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/mauritius-tour-packages/"
+                    target="_blank"
+                    rel="noopener">
+                    Mauritius
+                </a>
+
+                <a
+                    href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/bali-tour-packages/"
+                    target="_blank"
+                    rel="noopener">
+                    Bali
+                </a>
+
+                <a
+                    href="https://travelsagaholidays.in/travel-services/holiday-packages-from-india/turkey-tour-packages/"
+                    target="_blank"
+                    rel="noopener">
+                    Turkey
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 WanderPulse. All Rights Reserved.
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
